@@ -5,8 +5,7 @@ BuildArch:      noarch
 Summary:        Pop-out 3D image viewer
 License:        GPL-3.0-or-later
 URL:            https://github.com/PopoutApps/popout3d
-Source0:        %{name}-%{version}.tar.gz
-
+Source0:       https://github.com/PopoutApps/popout3d/archive/refs/tags/popout3d-v%{version}.tar.gz
 BuildRequires:  meson
 BuildRequires:  ninja-build
 BuildRequires:  python3-devel
