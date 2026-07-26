@@ -5,7 +5,7 @@ BuildArch:      noarch
 Summary:        Pop-out 3D image viewer
 License:        GPL-3.0-or-later
 URL:            https://github.com/PopoutApps/popout3d
-Source0:        popout3d-%{version}.tar.gz
+Source0:        https://github.com/PopoutApps/popout3d/archive/v%{version}/popout3d-%{version}.tar.gz
 BuildRequires:  meson
 BuildRequires:  ninja-build
 BuildRequires:  python3-devel
@@ -24,7 +24,8 @@ Requires:       hicolor-icon-theme
 Popout3D lets you create stereoscopic images from ordinary photographs.
 
 %check
-# No tests available
+desktop-file-validate popout3d.desktop
+appstream-util validate-relax --nonet popout3d.metainfo.xml
 
 # prep section
 # setup step
