@@ -14,7 +14,7 @@ BuildRequires:  desktop-file-utils
 #Requires:       gtk4
 #Requires:       gdk-pixbuf2
 #Requires:       glib2
-Requires:       hugin
+Requires:       hugin-base
 Requires:       python3
 Requires:       python3-gobject
 Requires:       python3-pillow
