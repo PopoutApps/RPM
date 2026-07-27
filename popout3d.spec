@@ -23,10 +23,6 @@ Requires:       hicolor-icon-theme
 %description
 Popout3D lets you create stereoscopic images from ordinary photographs.
 
-%check
-desktop-file-validate popout3d.desktop
-appstream-util validate-relax --nonet popout3d.metainfo.xml
-
 # prep section
 # setup step
 
@@ -40,6 +36,10 @@ appstream-util validate-relax --nonet popout3d.metainfo.xml
 
 %install
 %meson_install
+
+%check
+desktop-file-validate %{buildroot}%{_datadir}/applications/popout3d.desktop
+appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/popout3d.metainfo.xml
 
 %files
 %license LICENSE
