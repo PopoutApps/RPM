@@ -1,5 +1,5 @@
 Name:           popout3d
-Version:        1.6.47
+Version:        1.6.48
 Release:        1%{?dist}
 BuildArch:      noarch
 Summary:        Pop-out 3D image viewer
@@ -38,16 +38,16 @@ Popout3D lets you create stereoscopic images from ordinary photographs.
 %meson_install
 
 %check
-desktop-file-validate %{buildroot}%{_datadir}/applications/popout3d.desktop
-appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/popout3d.metainfo.xml
+desktop-file-validate %{buildroot}%{_datadir}/applications/com.github.PopoutApps.popout3d.desktop
+appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/com.github.PopoutApps.popout3d.metainfo.xml
 
 %files
 %license LICENSE
 %doc README.md
 %{_bindir}/popout3d
 %{_datadir}/popout3d/blank.png
-%{_datadir}/applications/popout3d.desktop
-%{_datadir}/metainfo/popout3d.metainfo.xml
+%{_datadir}/applications/com.github.PopoutApps.popout3d.desktop
+%{_datadir}/metainfo/com.github.PopoutApps.popout3d.metainfo.xml
 %{_datadir}/icons/hicolor/64x64/apps/com.github.PopoutApps.popout3d.png
 %{_datadir}/icons/hicolor/128x128/apps/com.github.PopoutApps.popout3d.png
 
