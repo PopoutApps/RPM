@@ -1,5 +1,5 @@
 Name:           popout3d
-Version:        1.6.48
+Version:        1.6.49
 Release:        1%{?dist}
 BuildArch:      noarch
 Summary:        Pop-out 3D image viewer
